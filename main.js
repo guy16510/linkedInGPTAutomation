@@ -38,8 +38,7 @@ const USER_DATA_PATH = path.resolve(__dirname, "user_data"); // Path to store us
 
     // Step 1: Search for Easy Apply Jobs and get job IDs
     console.log("Navigating to Jobs section...");
-    // const jobIds = await searchEasyApplyJobs(page);
-    const jobIds = [4103768621]
+    const jobIds = await searchEasyApplyJobs(page);
     
     console.log("Found Job IDs:", jobIds);
 
